@@ -7,8 +7,8 @@ const comp = {
 
     return(
       <View textAlign={"center"} padding={tokens.space.large}>
-        <text style={{fontSize: 80}}>
-          Alparslan'ın götünün içi
+        <text style={{fontSize: 20}}>
+          DoLearn
         </text>
 
       </View>
