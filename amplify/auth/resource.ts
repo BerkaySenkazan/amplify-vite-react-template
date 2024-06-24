@@ -1,4 +1,5 @@
 import { defineAuth } from '@aws-amplify/backend';
+import { UserAttributeKey } from 'aws-amplify/auth';
 
 /**
  * Define and configure your auth resource
@@ -11,13 +12,10 @@ export const auth = defineAuth({
 
   userAttributes: {
 
-    given_name: {
-      require: false
-    },
-
-    family_name: {
-      require:false
+    name: {
+      required: false
     }
 
   }
+
 });
