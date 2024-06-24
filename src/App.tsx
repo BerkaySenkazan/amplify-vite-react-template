@@ -1,8 +1,28 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
+import { Authenticator, View, useTheme } from "@aws-amplify/ui-react";
+import '@aws-amplify/ui-react/styles.css'
 
 const client = generateClient<Schema>();
+
+const comp = {
+  Header() {
+    const {tokens } = useTheme();
+
+    return(
+      <View textAlign={"center"} padding={tokens.space.large}>
+        <text style={{fontSize: 80}}>
+          Alparslan'ın götünün içi
+        </text>
+
+      </View>
+
+    )
+  }
+  
+
+}
 
 function App() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
@@ -14,7 +34,7 @@ function App() {
   }, []);
 
   function createTodo() {
-    client.models.Todo.create({ content: window.prompt("Todo content") });
+    client.models.Todo.create({ content: window.prompt("Todo content")});
   }
 
   function deleteTodo(id: string) {
@@ -24,22 +44,11 @@ function App() {
   }
 
   return (
-    <main>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
-      <ul>
-        {todos.map((todo) => (
-          <li onClick= {() => deleteTodo(todo.id)}key={todo.id}>{todo.content}</li>
-        ))}
-      </ul>
-      <div>
-        🥳 App successfully hosted. Try creating a new todo.
-        <br />
-        <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
-        </a>
-      </div>
-    </main>
+    <Authenticator components={comp}>
+      <main>
+
+      </main>
+    </Authenticator>
   );
 }
 
