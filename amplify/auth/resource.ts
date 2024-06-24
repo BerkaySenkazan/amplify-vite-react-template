@@ -8,4 +8,16 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
   },
+
+  userAttributes: {
+
+    given_name: {
+      require: false
+    },
+
+    family_name: {
+      require:false
+    }
+
+  }
 });

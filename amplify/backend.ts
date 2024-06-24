@@ -2,7 +2,13 @@ import { defineBackend } from '@aws-amplify/backend';
 import { auth } from './auth/resource';
 import { data } from './data/resource';
 
-defineBackend({
+const backend = defineBackend({
   auth,
   data,
 });
+
+const {cfnUserPool} = backend.auth.resources.cfnResources;
+
+cfnUserPool.addPropertyOverride('Policies.RequireLowercase', false)
+
+

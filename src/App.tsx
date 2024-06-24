@@ -1,5 +1,6 @@
 import { Authenticator, View, useTheme } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css'
+import { fetchUserAttributes } from "aws-amplify/auth";
 
 const comp = {
   Header() {
@@ -24,7 +25,9 @@ function App() {
   return (
     <Authenticator components={comp}>
       <main>
-
+      <text>
+        Hello {fetchUserAttributes.name}
+      </text>
       </main>
     </Authenticator>
   );
