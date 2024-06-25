@@ -1,5 +1,6 @@
-import { Authenticator, View, useTheme } from "@aws-amplify/ui-react";
+import { Authenticator, Flex, View, useTheme } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css'
+import outputs from "../amplify_outputs.json"
 
 
 const comp = {
@@ -7,16 +8,39 @@ const comp = {
     const {tokens } = useTheme();
 
     return(
-      <View textAlign={"center"} padding={tokens.space.large}>
-        <text style={{fontSize: 20}}>
-          DoLearn
-        </text>
+      
+        <View textAlign={"center"} padding={tokens.space.large}>
+          <Flex justifyContent={"center"} alignContent={"center"}>
+            <text>test2</text>
+            <text> test </text>
+          </Flex>
+          
+          
 
-      </View>
+
+        </View>
+
+      
+
+  
 
     )
-  }
+    
+  },
   
+  Footer() {
+
+    const { tokens} = useTheme();
+
+    return (
+      <View textAlign={"center"} padding={tokens.space.large}>
+        <text>
+          test
+        </text>
+      </View>
+    )
+
+  }
 
 }
 
