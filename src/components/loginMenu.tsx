@@ -1,4 +1,4 @@
-import { Text, components } from "@aws-amplify/ui-react";
+import { Text } from "@aws-amplify/ui-react";
 import "./LoginMenu.css"
 
 
