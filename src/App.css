@@ -18,7 +18,42 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.top-button:hover {
 
+  color: aquamarine;
+  background-color: transparent;
+
+}
+
+.bottomBar {
+  background-color: aqua;
+  filter: drop-shadow(1px 2px 1px rgba(0, 69, 180, 0.619));
+}
+
+.bottomBar:hover {
+
+  background-color: palevioletred;
+  animation: bottomBar;
+  animation-duration: 0.5s;
+
+}
+
+@keyframes bottomBar {
+  from {
+    background-color: aqua;
+
+  }
+  to {
+    background-color: palevioletred;
+  }
+  
+}
+
+.side-panel {
+
+  background-color: black;
+
+}
 
 @keyframes logo-spin {
   from {

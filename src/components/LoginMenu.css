@@ -1,0 +1,16 @@
+.greeting {
+    animation-name: spinGreeting;
+    animation-duration: 2s;
+}
+
+.greeting::first-letter {
+    animation-name: spinGreeting;
+    animation-duration: 5s;
+}
+
+@keyframes spinGreeting {
+
+    from {transform: rotate(0deg);}
+    to {transform: rotate(3deg);}
+
+}
