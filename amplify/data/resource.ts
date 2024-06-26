@@ -17,6 +17,7 @@ export const schema = a.schema({
     carrot: a.integer(),
 
    })
+   .authorization(allow => allow.owner())
 });
 
 
