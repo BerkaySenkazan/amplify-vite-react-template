@@ -35,8 +35,9 @@
   background-color: palevioletred;
   animation: bottomBar;
   animation-duration: 0.5s;
-
+  
 }
+
 
 @keyframes bottomBar {
   from {
