@@ -1,5 +1,5 @@
-import React from "react"
-import { Button, Flex, withAuthenticator, components } from '@aws-amplify/ui-react';
+
+import { Button, Flex, withAuthenticator } from '@aws-amplify/ui-react';
 import "./Navigate.css"
 import { Link } from "react-router-dom"
 

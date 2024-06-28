@@ -6,7 +6,7 @@ import "./ErrorScreen.tsx"
 import "./Doplay.tsx"
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
-import { Router, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ErrorPage } from "./ErrorScreen.tsx";
 import Doplay from "./Doplay.tsx";
 import { Authenticator } from "@aws-amplify/ui-react";
