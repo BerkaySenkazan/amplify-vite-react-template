@@ -1,16 +1,46 @@
 .FlexNav {
     padding-top: 0;
     padding-left: 0;
-    align-items: center;
+    gap: 2rem;
+
+
+
+ 
+    
+
+
+}
+.View {
+
+    background: linear-gradient(180deg, rgb(240, 242, 255) 95%, rgba(255, 255, 255, 0));
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.144));
+
+    
+    padding: 1rem;
 
 
 }
 
+.NavBar {
+
+    display: flex;
+
+    padding-top: 0;
+    padding-left: 0;
+    justify-content: center;
+    
+
+}
 .Button {
-    width: 200%;
+    height: 3rem;
+
 }
 
 .Button:hover {
-    width: 250%;
+    height: 3.5rem;
+
 
 }
