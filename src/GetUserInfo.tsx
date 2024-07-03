@@ -38,7 +38,7 @@ export function GetSelfUserInformation(props: {name: String}) {
 
     return(
         <Flex direction={"column"} alignContent={"center"} gap={"0px"} textAlign={"center"} margin={"1px"} alignItems={"center"}>
-            <Text>Welcome! {props.name ? props.name: "NoName"} </Text>
+            <Text>Welcome! {userName ? userName: props.name} </Text>
             <Button onClick={() => signOut()} 
             height={"30px"}
             backgroundColor={"red.60"}
