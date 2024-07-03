@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-doplay-dev-784f2-authRole",
+      "UnauthRoleArn": "arn:aws:iam::730335318092:role/amplify-doplay-dev-784f2-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::730335318092:role/amplify-doplay-dev-784f2-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-doplay-dev-784f2-deployment",
+      "UnauthRoleName": "amplify-doplay-dev-784f2-unauthRole",
+      "StackName": "amplify-doplay-dev-784f2",
+      "StackId": "arn:aws:cloudformation:eu-north-1:730335318092:stack/amplify-doplay-dev-784f2/c65579d0-3942-11ef-9dcc-0aa12c20cf33",
+      "AmplifyAppId": "d2kfxh8rmsogkw"
+    }
+  }
+}

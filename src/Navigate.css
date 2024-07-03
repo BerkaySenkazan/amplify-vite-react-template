@@ -10,12 +10,12 @@
 
 
 }
-.View {
+.NavBarBackground {
 
     background: linear-gradient(180deg, rgb(240, 242, 255) 95%, rgba(255, 255, 255, 0));
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.144));
 
     
@@ -24,6 +24,21 @@
 
 }
 
+.BodyBackground {
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100vw;
+
+}
+
+
+
 .NavBar {
 
     display: flex;
@@ -31,16 +46,26 @@
     padding-top: 0;
     padding-left: 0;
     justify-content: center;
+    align-content: center;
     
 
 }
 .Button {
     height: 3rem;
+    width: fit-content;
+    align-self: center;
 
 }
 
-.Button:hover {
-    height: 3.5rem;
-
-
+.StudentInfo {
+    background-color: aliceblue;
+    border-style:solid;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    width: 95vw;
+    border-width: 1px;
+    
+    gap: 1vh;
+    padding: 2vh;
 }
