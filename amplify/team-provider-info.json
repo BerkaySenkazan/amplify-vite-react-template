@@ -10,6 +10,11 @@
       "StackName": "amplify-doplay-dev-784f2",
       "StackId": "arn:aws:cloudformation:eu-north-1:730335318092:stack/amplify-doplay-dev-784f2/c65579d0-3942-11ef-9dcc-0aa12c20cf33",
       "AmplifyAppId": "d2kfxh8rmsogkw"
+    },
+    "categories": {
+      "auth": {
+        "doplaydc38473d": {}
+      }
     }
   }
 }
