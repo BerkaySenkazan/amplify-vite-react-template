@@ -1,4 +1,4 @@
-import { Authenticator, withAuthenticator, Button, Flex, Grid, Heading, Icon, View, components } from '@aws-amplify/ui-react';
+import { withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css'
 import "./App.css"
 import Navigate from './Navigate';
