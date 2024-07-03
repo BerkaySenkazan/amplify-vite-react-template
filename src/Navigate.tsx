@@ -4,7 +4,7 @@ import "./Navigate.css"
 import { Link } from "react-router-dom"
 import { GetSelfUserInformation } from './GetUserInfo';
 import { InfoBar } from './UserInfoBar';
-
+import { View, Text } from '@aws-amplify/ui-react';
 
 
 
