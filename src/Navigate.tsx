@@ -32,7 +32,7 @@ export function Navigate() {
         <Text marginBottom={"3px"} marginTop={"80px"} fontSize={"20px"} fontFamily={"sans-serif"} alignSelf={"center"}>My Applications</Text>
         <div>
             <View className='BodyBackground' as = "div" margin={"0px"}>
-                <Link to={"/doplay"} > <Button className='Button'> DoPlay </Button></Link>
+                <Link to={"/doread"} > <Button className='Button'> DoRead </Button></Link>
                 <Link to={"/doplay"}><Button className='Button'>DoPlay</Button></Link>
             </View>
 
