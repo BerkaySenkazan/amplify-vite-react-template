@@ -1,20 +1,8 @@
 import { Flex, withAuthenticator, Text } from '@aws-amplify/ui-react';
-import { useEffect, useState } from 'react';
-
 
 function DoRead(){
 
-    const [html, setHtml] = useState("");
 
-    useEffect(() => {
-        async function getHtml()  {
-            await ((await fetch("./TestGame.html")).text().then(res => setHtml(res)))
-    
-        }
-        getHtml();
-
-    })
-    
 
 
     return(
