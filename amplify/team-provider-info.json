@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "doplaydc38473d": {}
+      },
+      "api": {
+        "doplay": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
       }
     }
   }
