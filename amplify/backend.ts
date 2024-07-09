@@ -6,6 +6,7 @@ import { storage } from './storage/resource';
 const backend = defineBackend({
   auth,
   data,
+  storage
 });
 
 
